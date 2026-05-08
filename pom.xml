@@ -12,10 +12,10 @@
   </parent>
 
   <groupId>com.proweb.catalogo</groupId>
-  <artifactId>pro-web-toloza-post1-u12</artifactId>
+  <artifactId>pro-web-toloza-post2-u12</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>pro-web-toloza-post1-u12</name>
-  <description>U12 Post 1 - Docker y despliegue en Railway</description>
+  <name>pro-web-toloza-post2-u12</name>
+  <description>U12 Post 2 - CI/CD con GitHub Actions y Docker Hub</description>
 
   <properties>
     <java.version>17</java.version>
@@ -55,6 +55,26 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.11</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
