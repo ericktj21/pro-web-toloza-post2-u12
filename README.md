@@ -1,6 +1,6 @@
 # U12 Post 2 - CI/CD con GitHub Actions y Docker Hub
 
-![CI/CD Status](https://github.com/<usuario>/<repo>/actions/workflows/ci.yml/badge.svg)
+![CI/CD Status](https://github.com/ericktj21/pro-web-toloza-post2-u12/actions/workflows/ci.yml/badge.svg)
 
 ## Requisitos
 - Java 17
@@ -19,10 +19,15 @@
 
 ## Imagen Docker
 ```bash
-docker pull <usuario>/mi-spring-app:latest
+docker pull ericktj21/mi-spring-app:latest
 ```
 
-## Evidencias (colocar en img/)
-- img/checkpoint1.png (historial Actions con checks verdes)
-- img/checkpoint2.png (artefacto JaCoCo descargado)
-- img/checkpoint3.png (Docker Hub con tags latest y sha)
+## Evidencias
+Historial de GitHub Actions con ejecuciones verdes
+![Historial Actions](img/actions.png)
+
+Artefacto JaCoCo descargado
+![JaCoCo report](img/jacoco-report.png)
+
+Docker Hub con tags latest y sha
+![Docker Hub tags](img/dockerhub.png)
